@@ -1,0 +1,29 @@
+view BuckshotLogo:Algo_Nav_Logo{
+	content = "Buckshot++"
+}
+
+view nav_button_Download:Algo_Nav_Button{
+	content = "Download"
+	href = "/Download"
+}
+
+view nav_button_GitHub:Algo_Nav_Button{
+	content = "GitHub"
+	href = "https://github.com/BuckshotPlusPlus/BuckshotPlusPlus"
+	target = "_blank"
+}
+
+view nav_button_Documentation:Algo_Primary_Button{
+	content = "Documentation"
+	href = "https://victor-chanet.gitbook.io/buckshot++/"
+	height = BuckshotLogo.height
+	line_height = BuckshotLogo.line_height
+}
+
+view nav_buttons:Algo_Nav_Buttons{
+	content = [nav_button_Download,nav_button_GitHub,nav_button_Documentation]
+}
+
+view nav:Algo_Nav{
+	content = [BuckshotLogo,nav_buttons]
+}

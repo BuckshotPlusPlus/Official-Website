@@ -1,0 +1,10 @@
+include "config/colors.bpp"
+
+include "views/basics.bpp"
+
+include "https://buckshotplusplus.github.io/Algo_ViewLibrary/includes.bpp"
+
+include "views/menu.bpp"
+
+include "pages/index.bpp"
+include "pages/download.bpp"

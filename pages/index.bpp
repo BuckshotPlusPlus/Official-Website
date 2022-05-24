@@ -1,0 +1,17 @@
+view indexTitle:h1{
+	content = "PHP, ReactJS and CSS just got a baby!"
+}
+
+view indexbody{
+	type = "body"
+	content = [nav,indexTitle]
+	margin = "0"
+	padding = "0"
+	font_family = "'Poppins', sans-serif"
+}
+
+page index{
+	title = "Buckshot++"
+	body = indexbody
+	fonts = ["https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nerko+One&family=Poppins&display=swap"]
+}

@@ -1,0 +1,7 @@
+view div{
+	type = "div"
+}
+
+view h1{
+	type = "h1"
+}

@@ -1,0 +1,8 @@
+view download_content:indexbody{
+	content = [nav]
+}
+
+page Download{
+	title = "Download"
+	body = download_content
+}
