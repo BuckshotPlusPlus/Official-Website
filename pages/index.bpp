@@ -1,17 +1,20 @@
-view indexTitle:h1{
+view Index_Title:Algo_Title{
 	content = "PHP, ReactJS and CSS just got a baby!"
 }
 
-view indexbody{
-	type = "body"
-	content = [nav,indexTitle]
-	margin = "0"
-	padding = "0"
-	font_family = "'Poppins', sans-serif"
+view Index_SubTitle:Algo_SubTitle{
+	content = "Create beautiful production ready websites in a few minutes!"
 }
 
-page index{
+view Index_Hero:Algo_Section_Hero{
+	content = [Index_Title,Index_SubTitle]
+}
+
+view Index_Body:Algo_Demo_Body{
+	content = [nav,Index_Hero,Algo_Footer]
+}
+
+page index:Algo_Page_Demo{
 	title = "Buckshot++"
-	body = indexbody
-	fonts = ["https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nerko+One&family=Poppins&display=swap"]
+	body = Index_Body
 }

@@ -1,8 +1,20 @@
-view download_content:indexbody{
-	content = [nav]
+view Download_Title:Algo_Title{
+	content = "Download Buckshot++ and get started now!"
 }
 
-page Download{
+view Download_SubTitle:Algo_SubTitle{
+	content = "You will be able to create a beautiful website in less then 5 min and host it yourself"
+}
+
+view Download_Hero:Algo_Section_Hero{
+	content = [Download_Title,Download_SubTitle]
+}
+
+view Download_Content:Algo_Demo_Body{
+	content = [nav,Download_Hero,Algo_Footer]
+}
+
+page Download:Algo_Page_Demo{
 	title = "Download"
-	body = download_content
+	body = Download_Content
 }
