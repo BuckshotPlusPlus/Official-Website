@@ -1,6 +1,6 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/BuckshotPlusPlus/BuckshotPlusPlus">
+  <a href="https://github.com/BuckshotPlusPlus/Official-Website">
     <img src="https://i.imgur.com/3880deE.png" alt="Logo">
   </a>
 </p>
