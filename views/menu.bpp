@@ -17,7 +17,7 @@ view nav_button_Documentation:Algo_Primary_Button{
 	content = "Documentation"
 	href = "https://victor-chanet.gitbook.io/buckshot++/"
 	height = BuckshotLogo.height
-	line_height = BuckshotLogo.line_height
+	line-height = BuckshotLogo.line_height
 }
 
 view nav_buttons:Algo_Nav_Buttons{
