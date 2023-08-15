@@ -1,7 +1,7 @@
-view div{
+view div {
 	type = "div"
 }
 
-view h1{
+view h1 {
 	type = "h1"
 }

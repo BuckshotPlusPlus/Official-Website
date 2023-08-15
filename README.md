@@ -5,20 +5,21 @@
   </a>
 </p>
 
-![Downloads](https://img.shields.io/github/downloads/BuckshotPlusPlus/Official-Website/total) ![Contributors](https://img.shields.io/github/contributors/BuckshotPlusPlus/Official-Website?color=dark-green) ![Forks](https://img.shields.io/github/forks/BuckshotPlusPlus/Official-Website?style=social) ![Stargazers](https://img.shields.io/github/stars/BuckshotPlusPlus/Official-Website?style=social) ![Issues](https://img.shields.io/github/issues/BuckshotPlusPlus/Official-Website) ![License](https://img.shields.io/github/license/BuckshotPlusPlus/Official-Website) 
+![Downloads](https://img.shields.io/github/downloads/BuckshotPlusPlus/Official-Website/total) ![Contributors](https://img.shields.io/github/contributors/BuckshotPlusPlus/Official-Website?color=dark-green) ![Forks](https://img.shields.io/github/forks/BuckshotPlusPlus/Official-Website?style=social) ![Stargazers](https://img.shields.io/github/stars/BuckshotPlusPlus/Official-Website?style=social) ![Issues](https://img.shields.io/github/issues/BuckshotPlusPlus/Official-Website) ![License](https://img.shields.io/github/license/BuckshotPlusPlus/Official-Website)
 
 ## Table Of Contents
 
-* [Contributing](#contributing)
-* [Creating A Pull Request](#creating-a-pull-request)
-* [Authors](#authors)
+- [Contributing](#contributing)
+- [Creating A Pull Request](#creating-a-pull-request)
+- [Authors](#authors)
 
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-* If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/BuckshotPlusPlus/Official-Website/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
-* Please make sure you check your spelling and grammar.
-* Create individual PR for each suggestion.
+
+- If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/BuckshotPlusPlus/Official-Website/issues/new) to discuss it, or directly create a pull request after you edit the _README.md_ file with necessary changes.
+- Please make sure you check your spelling and grammar.
+- Create individual PR for each suggestion.
 
 ### Creating A Pull Request
 
@@ -30,5 +31,5 @@ Contributions are what make the open source community such an amazing place to b
 
 ## Authors
 
-* **[Vic92548](https://github.com/Vic92548)** - *Developer* 
-* **[MoskalykA](https://github.com/MoskalykA)** - *Developer* 
+- **[Vic92548](https://github.com/Vic92548)** - _Developer_
+- **[MoskalykA](https://github.com/MoskalykA)** - _Developer_

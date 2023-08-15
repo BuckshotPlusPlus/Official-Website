@@ -1,20 +1,20 @@
-view Index_Title:Algo_Title{
+view Index_Title:Algo_Title {
 	content = "PHP, ReactJS and CSS just got a baby!"
 }
 
-view Index_SubTitle:Algo_SubTitle{
+view Index_SubTitle:Algo_SubTitle {
 	content = "Create beautiful production ready websites in a few minutes!"
 }
 
-view Index_Hero:Algo_Section_Hero{
+view Index_Hero:Algo_Section_Hero {
 	content = [Index_Title,Index_SubTitle]
 }
 
-view Index_Body:Algo_Demo_Body{
+view Index_Body:Algo_Demo_Body {
 	content = [nav,Index_Hero,Algo_Footer]
 }
 
-page index:Algo_Page_Demo{
+page index:Algo_Page_Demo {
 	title = "Buckshot++"
 	body = Index_Body
 }
