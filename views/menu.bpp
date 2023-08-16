@@ -9,21 +9,9 @@ view nav_button_Documentation:Algo_Nav_Button {
 	target = "_blank"
 }
 
-<<<<<<< HEAD
 view nav_button_GitHub:Algo_Primary_Button {
 	content = "Join us on GitHub"
 	href = "https://github.com/BuckshotPlusPlus/BuckshotPlusPlus"
-=======
-view nav_button_Documentation:Algo_Primary_Button {
-	content = "Documentation"
-	href = "https://victor-chanet.gitbook.io/buckshot++/"
-	height = BuckshotLogo.height
-	line-height = BuckshotLogo.line-height
-}
-
-view nav_buttons:Algo_Nav_Buttons {
-	content = [nav_button_Download,nav_button_GitHub,nav_button_Documentation]
->>>>>>> 8050a0d9d3f9fe8926be91980899a136e736707c
 }
 
 view nav:Algo_Nav {
