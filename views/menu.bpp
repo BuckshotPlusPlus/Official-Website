@@ -1,29 +1,32 @@
-view BuckshotLogo:Algo_Nav_Logo {
-	content = "Buckshot++"
-}
-
 view nav_button_Download:Algo_Nav_Button {
 	content = "Download"
 	href = "/Download"
 }
 
-view nav_button_GitHub:Algo_Nav_Button {
-	content = "GitHub"
-	href = "https://github.com/BuckshotPlusPlus/BuckshotPlusPlus"
+view nav_button_Documentation:Algo_Nav_Button {
+	content = "Documentation"
+	href = "https://bpp.gitbook.io/buckshot++/getting-started/what-is-buckshot++"
 	target = "_blank"
 }
 
-view nav_button_Documentation:Algo_Primary_Button {
-	content = "Documentation"
-	href = "https://victor-chanet.gitbook.io/buckshot++/"
-	height = BuckshotLogo.height
-	line-height = BuckshotLogo.line_height
-}
-
-view nav_buttons:Algo_Nav_Buttons {
-	content = [nav_button_Download,nav_button_GitHub,nav_button_Documentation]
+view nav_button_GitHub:Algo_Primary_Button {
+	content = "Join us on GitHub"
+	href = "https://github.com/BuckshotPlusPlus/BuckshotPlusPlus"
 }
 
 view nav:Algo_Nav {
-	content = [BuckshotLogo,nav_buttons]
+	Algo_Nav_Logo.content = "BuckShot++"
+	Algo_Nav_Buttons.content = [nav_button_Documentation,nav_button_GitHub]
+	
 }
+
+
+Algo_Footer_Link_Title.content = "Join Us"
+
+view DiscordFooterLink:Algo_Footer_Link{
+	content = "Discord"
+	href = "https://discord.gg/cakR4W2akj"
+}
+
+Algo_Footer_Link_Container.content = [Algo_Footer_Link_Title,DiscordFooterLink]
+Algo_Footer.content = [Algo_Footer_Link_Container]

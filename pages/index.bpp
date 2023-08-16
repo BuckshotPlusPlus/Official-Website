@@ -1,20 +1,58 @@
-view Index_Title:Algo_Title {
-	content = "PHP, ReactJS and CSS just got a baby!"
-}
-
-view Index_SubTitle:Algo_SubTitle {
-	content = "Create beautiful production ready websites in a few minutes!"
-}
-
 view Index_Hero:Algo_Section_Hero {
-	content = [Index_Title,Index_SubTitle]
+	Algo_Title.content = "The unified component-based language of the web"
+	Algo_SubTitle.content = "Create beautiful production ready websites in a few minutes!"
+}
+
+view Index_Feature_1:Algo_Features_Card{
+	Algo_Card_Title.content = "Component based"
+	Algo_Card_Text.content = "Everything is component in BuckShot++, so you can reuse accross projects in a simple and elegant manner."
+}
+
+view Index_Feature_2:Algo_Features_Card{
+	Algo_Card_Title.content = "HTTP includes"
+	Algo_Card_Text.content = "Import components from any project, with a simple http url!"
+}
+
+view Index_Feature_3:Algo_Features_Card{
+	Algo_Card_Title.content = "Unified code"
+	Algo_Card_Text.content = "Write simple bpp code, that will be converted into HTML, CSS and Javascript."
+}
+
+view Index_Feature_4:Algo_Features_Card{
+	Algo_Card_Title.content = "Conditional rendering"
+	Algo_Card_Text.content = "Create complex websites and control access to your website easily."
+}
+
+view Index_Feature_5:Algo_Features_Card{
+	Algo_Card_Title.content = "Server Side Rendering"
+	Algo_Card_Text.content = "A powerful server side rendering, but with components. Think of it as if PHP was designed like react."
+}
+
+view Index_Feature_6:Algo_Features_Card{
+	Algo_Card_Title.content = "Static site export"
+	Algo_Card_Text.content = "Export your static site to plain HTML files that are easy to deploy."
+}
+
+view Index_Call_To_Action_Test{
+	content = "Ready to get started?"
+	type = "span"
+	margin-right = "20px"
+}
+
+view Index_Call_To_Action:Algo_Section{
+	Algo_Primary_Button.content = nav_button_GitHub.content
+	Algo_Primary_Button.font-size = "18px"
+	Algo_Title.content = [Index_Call_To_Action_Test,Algo_Primary_Button]
 }
 
 view Index_Body:Algo_Demo_Body {
-	content = [nav,Index_Hero,Algo_Footer]
+	content = [nav,Index_Hero,Algo_Features,Index_Call_To_Action,Algo_Footer]
 }
 
 page index:Algo_Page_Demo {
+	Algo_Features_Title.content = "Make better web projects, faster"
+	Algo_Features_SubTitle.content = "Use components to bootstrap your projects."
+	Algo_Features_Cards.content = [Index_Feature_1,Index_Feature_2,Index_Feature_3,Index_Feature_4,Index_Feature_5,Index_Feature_6]
 	title = "Buckshot++"
 	body = Index_Body
 }
