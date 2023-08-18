@@ -20,13 +20,12 @@ view nav:Algo_Nav {
 	
 }
 
-
 Algo_Footer_Link_Title.content = "Join Us"
 
-view DiscordFooterLink:Algo_Footer_Link{
+view DiscordFooterLink:Algo_Footer_Link {
 	content = "Discord"
 	href = "https://discord.gg/cakR4W2akj"
 }
 
-Algo_Footer_Link_Container.content = [Algo_Footer_Link_Title,DiscordFooterLink]
+Algo_Footer_Link_Container.content = [Algo_Footer_Link_Title, DiscordFooterLink]
 Algo_Footer.content = [Algo_Footer_Link_Container]

@@ -7,11 +7,11 @@ view Download_SubTitle:Algo_SubTitle {
 }
 
 view Download_Hero:Algo_Section_Hero {
-	content = [Download_Title,Download_SubTitle]
+	content = [Download_Title, Download_SubTitle]
 }
 
 view Download_Content:Algo_Demo_Body {
-	content = [nav,Download_Hero,Algo_Footer]
+	content = [nav, Download_Hero, Algo_Footer]
 }
 
 page Download:Algo_Page_Demo {
