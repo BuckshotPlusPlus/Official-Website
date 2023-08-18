@@ -50,6 +50,7 @@ view Index_Body:Algo_Demo_Body {
 }
 
 page index:Algo_Page_Demo {
+	head = "<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script><script defer src='/_vercel/insights/script.js'></script>"
 	Algo_Features_Title.content = "Make better web projects, faster"
 	Algo_Features_SubTitle.content = "Use components to bootstrap your projects."
 	Algo_Features_Cards.content = [Index_Feature_1, Index_Feature_2, Index_Feature_3, Index_Feature_4, Index_Feature_5, Index_Feature_6]
