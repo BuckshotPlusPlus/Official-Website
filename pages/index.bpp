@@ -40,8 +40,8 @@ view Index_Call_To_Action_Test {
 }
 
 view Index_Call_To_Action:Algo_Section {
-	Algo_Primary_Button.content = nav_button_GitHub.content
-	Algo_Primary_Button.href = nav_button_GitHub.href
+	Algo_Primary_Button.content = "Join us on Discord"
+	Algo_Primary_Button.href = "https://discord.gg/cakR4W2akj"
 	Algo_Primary_Button.font-size = "18px"
 	Algo_Title.content = [Index_Call_To_Action_Test, Algo_Primary_Button]
 }
