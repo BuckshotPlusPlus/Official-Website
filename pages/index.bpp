@@ -50,6 +50,11 @@ view Index_Body:Algo_Demo_Body {
 	content = [nav, Index_Hero, Algo_Features, Index_Call_To_Action, Algo_Footer]
 }
 
+meta Description{
+	name = "description"
+	content = "Create amazing fullstack websites with reusable components using BuckShotPlusPlus"
+}
+
 page index:Algo_Page_Demo {
 	head = "<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script><script defer src='/_vercel/insights/script.js'></script>"
 	Algo_Features_Title.content = "Make better web projects, faster"
@@ -58,4 +63,5 @@ page index:Algo_Page_Demo {
 	title = "Buckshot++"
 	icon = "bpp.ico"
 	body = Index_Body
+	meta = [Description]
 }
