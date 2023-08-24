@@ -9,8 +9,28 @@ view nav_button_Documentation:Algo_Nav_Button {
 	target = "_blank"
 }
 
+view nav_button_GitHub_Icon{
+	type = "span"
+	content = "<i data-feather='star' width='20' height='20' style='position: relative;top:2px' stroke='" + Algo_Color_White + "'></i>&nbsp;"
+}
+
+event PleaseLeaveAStar{
+	content = "Don\'t forget the star ;)"
+}
+
+event PleaseLeaveAStar_Reset{
+	content = "Github repo"
+}
+
+view nav_button_GitHub_Text{
+	type = "span"
+	content = "Github repo"
+	onmouseover = PleaseLeaveAStar
+	onmouseout = PleaseLeaveAStar_Reset
+}
+
 view nav_button_GitHub:Algo_Primary_Button {
-	content = "Join us on GitHub"
+	content = [nav_button_GitHub_Icon, nav_button_GitHub_Text]
 	href = "https://github.com/BuckshotPlusPlus/BuckshotPlusPlus"
 }
 
@@ -20,12 +40,49 @@ view nav:Algo_Nav {
 	
 }
 
-Algo_Footer_Link_Title.content = "Join Us"
-
 view DiscordFooterLink:Algo_Footer_Link {
 	content = "Discord"
 	href = "https://discord.gg/cakR4W2akj"
 }
 
-Algo_Footer_Link_Container.content = [Algo_Footer_Link_Title, DiscordFooterLink]
-Algo_Footer.content = [Algo_Footer_Link_Container]
+view BppFooterLink:Algo_Footer_Link {
+	content = "BuckShotPlusPlus"
+	href = "https://github.com/BuckshotPlusPlus/BuckshotPlusPlus"
+}
+
+view WebsiteFooterLink:Algo_Footer_Link {
+	content = "Official Website"
+	href = "https://github.com/BuckshotPlusPlus/Official-Website"
+}
+
+view AlgoFooterLink:Algo_Footer_Link {
+	content = "Algo"
+	href = "https://github.com/BuckshotPlusPlus/Algo_ViewLibrary"
+}
+
+view TutoFooterLink:Algo_Footer_Link {
+	content = "Getting started"
+	href = "https://www.youtube.com/watch?v=0z7p-ipa9UQ"
+}
+
+view Nav_Community:Algo_Footer_Link_Container{
+	Algo_Footer_Link_Title.content = "Community"
+	content = [Algo_Footer_Link_Title, DiscordFooterLink]
+}
+
+view Nav_Projects:Algo_Footer_Link_Container{
+	Algo_Footer_Link_Title.content = "Open source projects"
+	content = [Algo_Footer_Link_Title, BppFooterLink, WebsiteFooterLink]
+}
+
+view Nav_Tutorials:Algo_Footer_Link_Container{
+	Algo_Footer_Link_Title.content = "Tutorials"
+	content = [Algo_Footer_Link_Title, TutoFooterLink]
+}
+
+view Nav_Templates:Algo_Footer_Link_Container{
+	Algo_Footer_Link_Title.content = "Templates"
+	content = [Algo_Footer_Link_Title, AlgoFooterLink]
+}
+
+Algo_Footer.content = [Nav_Community,Nav_Projects, Nav_Tutorials, Nav_Templates]

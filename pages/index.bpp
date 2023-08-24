@@ -1,36 +1,72 @@
-view Index_Hero:Algo_Section_Hero {
+view Index_Hero:Algo_Code_Example_Hero {
 	Algo_Title.content = "The unified component-based language of the web"
 	Algo_SubTitle.content = "Create beautiful production ready websites in a few minutes!"
+	Algo_Code_Example_Content_Lines.content = "1<br>2<br>3<br>4<br>5<br>"
+	Algo_Code_Example_Content_Code.content = Algo_Code_Example_Content_Code_View + " HelloWorld{<br>" + Algo_Code_Example_Content_Code_Tab + "type = 'h1'<br>" + Algo_Code_Example_Content_Code_Tab + "content = 'Hellow World!'<br>" + Algo_Code_Example_Content_Code_Tab + "color = 'red'<br>}"
 }
 
-view Index_Feature_1:Algo_Features_Card {
+event MouveElementUp{
+	margin-top = "-10px"
+}
+
+event MouveElementDown{
+	margin-top = "0px"
+}
+
+Algo_Card_With_Icon.transition = "0.3s all"
+Algo_Card_With_Icon.onmouseover = MouveElementUp
+Algo_Card_With_Icon.onmouseout = MouveElementDown
+Algo_Card_With_Icon.height = "240px"
+Algo_Card_With_Icon.margin-top = "0px"
+Algo_Card_Title.font-size = "20px"
+
+view Index_Feature_1:Algo_Card_With_Icon {
+	Algo_Card_Icon.content = "<i data-feather='box' stroke='" + Algo_Color_Dark + "'></i>"
 	Algo_Card_Title.content = "Component based"
 	Algo_Card_Text.content = "Everything is component in BuckShot++, so you can reuse accross projects in a simple and elegant manner."
 }
 
-view Index_Feature_2:Algo_Features_Card {
+
+view Index_Feature_2:Algo_Card_With_Icon {
+	Algo_Card_Icon.content = "<i data-feather='link' stroke='" + Algo_Color_Dark + "'></i>"
 	Algo_Card_Title.content = "HTTP includes"
 	Algo_Card_Text.content = "Import components from any project, with a simple http url!"
 }
 
-view Index_Feature_3:Algo_Features_Card {
+view Index_Feature_3:Algo_Card_With_Icon {
+	Algo_Card_Icon.content = "<i data-feather='truck' stroke='" + Algo_Color_Dark + "'></i>"
 	Algo_Card_Title.content = "Unified code"
 	Algo_Card_Text.content = "Write simple bpp code, that will be converted into HTML, CSS and Javascript."
 }
 
-view Index_Feature_4:Algo_Features_Card {
+view Index_Feature_4:Algo_Card_With_Icon {
+	Algo_Card_Icon.content = "<i data-feather='git-branch' stroke='" + Algo_Color_Dark + "'></i>"
 	Algo_Card_Title.content = "Conditional rendering"
 	Algo_Card_Text.content = "Create complex websites and control access to your website easily."
 }
 
-view Index_Feature_5:Algo_Features_Card {
+view Index_Feature_5:Algo_Card_With_Icon {
+	Algo_Card_Icon.content = "<i data-feather='server' stroke='" + Algo_Color_Dark + "'></i>"
 	Algo_Card_Title.content = "Server Side Rendering"
 	Algo_Card_Text.content = "A powerful server side rendering, but with components. Think of it as if PHP was designed like react."
 }
 
-view Index_Feature_6:Algo_Features_Card {
+view Index_Feature_6:Algo_Card_With_Icon {
+	Algo_Card_Icon.content = "<i data-feather='terminal' stroke='" + Algo_Color_Dark + "'></i>"
 	Algo_Card_Title.content = "Static site export"
 	Algo_Card_Text.content = "Export your static site to plain HTML files that are easy to deploy."
+}
+
+view Index_Feature_7:Algo_Card_With_Icon {
+	Algo_Card_Icon.content = "<i data-feather='shield' stroke='" + Algo_Color_Dark + "'></i>"
+	Algo_Card_Title.content = "User sessions"
+	Algo_Card_Text.content = "Sessions are built-in in BuckShotPlusPlus, to access session data like a user ip, you just have to do session.ip, simple right?"
+}
+
+view Index_Feature_8:Algo_Card_With_Icon {
+	Algo_Card_Icon.content = "<i data-feather='search' stroke='" + Algo_Color_Dark + "'></i>"
+	Algo_Card_Title.content = "Built for SEO"
+	Algo_Card_Text.content = "BuckShot++ includes built-in SEO features like meta tags managment or automatic sitemap.xml (coming soon)."
 }
 
 view Index_Call_To_Action_Test {
@@ -56,10 +92,10 @@ meta Description{
 }
 
 page index:Algo_Page_Demo {
-	head = "<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script><script defer src='/_vercel/insights/script.js'></script>"
+	head = "<script>window.addEventListener('load', (event) => {feather.replace();});</script><script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script><script defer src='/_vercel/insights/script.js'></script>"
 	Algo_Features_Title.content = "Make better web projects, faster"
 	Algo_Features_SubTitle.content = "Use components to bootstrap your projects."
-	Algo_Features_Cards.content = [Index_Feature_1, Index_Feature_2, Index_Feature_3, Index_Feature_4, Index_Feature_5, Index_Feature_6]
+	Algo_Features_Cards.content = [Index_Feature_1, Index_Feature_2, Index_Feature_3, Index_Feature_4, Index_Feature_5, Index_Feature_6, Index_Feature_7, Index_Feature_8]
 	title = "Buckshot++"
 	icon = "bpp.ico"
 	body = Index_Body
