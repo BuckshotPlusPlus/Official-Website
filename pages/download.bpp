@@ -1,5 +1,5 @@
 view Download_Title:Algo_Title {
-	content = "Download Buckshot++ and get started now!"
+	content = "Download BuckshotPlusPlus and get started now!"
 }
 
 view Download_SubTitle:Algo_SubTitle {
@@ -14,7 +14,8 @@ view Download_Content:Algo_Demo_Body {
 	content = [nav, Download_Hero, Algo_Footer]
 }
 
-page Download:Algo_Page_Demo {
+page download:Algo_Page_Demo {
 	title = "Download"
 	body = Download_Content
+	icon = "bpp.ico"
 }

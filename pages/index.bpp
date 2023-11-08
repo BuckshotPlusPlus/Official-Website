@@ -96,7 +96,7 @@ page index:Algo_Page_Demo {
 	Algo_Features_Title.content = "Make better web projects, faster"
 	Algo_Features_SubTitle.content = "Use components to bootstrap your projects."
 	Algo_Features_Cards.content = [Index_Feature_1, Index_Feature_2, Index_Feature_3, Index_Feature_4, Index_Feature_5, Index_Feature_6, Index_Feature_7, Index_Feature_8]
-	title = "Buckshot++"
+	title = "BuckshotPlusPlus"
 	icon = "bpp.ico"
 	body = Index_Body
 	meta = [Description]

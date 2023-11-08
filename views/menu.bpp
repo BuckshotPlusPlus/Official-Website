@@ -35,7 +35,7 @@ view nav_button_GitHub:Algo_Primary_Button {
 }
 
 view nav:Algo_Nav {
-	Algo_Nav_Logo.content = "BuckShot++"
+	Algo_Nav_Logo.content = "BuckShotPlusPlus"
 	Algo_Nav_Buttons.content = [nav_button_Documentation,nav_button_GitHub]
 	
 }

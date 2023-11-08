@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url xmlns="">
+    <loc>http://localhost:8080/Algo_Page_Demo</loc>
+  </url>
+  <url xmlns="">
+    <loc>http://localhost:8080/</loc>
+  </url>
+  <url xmlns="">
+    <loc>http://localhost:8080/download</loc>
+  </url>
+</urlset>
