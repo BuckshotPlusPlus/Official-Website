@@ -83,7 +83,7 @@ view Index_Call_To_Action:Algo_Section {
 }
 
 view Index_Body:Algo_Demo_Body {
-	content = [nav, Index_Hero, Algo_Features, Index_Call_To_Action, Algo_Footer]
+	content = [nav, Algo_GitHub_Badge, Algo_NPM_Badge, Index_Hero, Algo_Features, Index_Call_To_Action, Algo_Footer]
 }
 
 meta Description{
@@ -99,5 +99,5 @@ page index:Algo_Page_Demo {
 	title = "BuckshotPlusPlus"
 	icon = "bpp.ico"
 	body = Index_Body
-	meta = [Description]
+	meta = [UTF8,Description]
 }

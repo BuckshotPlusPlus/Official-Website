@@ -19,18 +19,24 @@ event PleaseLeaveAStar{
 }
 
 event PleaseLeaveAStar_Reset{
-	content = "Github repo"
+	content = "Star on github " + Algo_GitHub_Stats.stargazers_count
+}
+
+view nav_star_showcase{
+	type = "span"
+	content = Algo_GitHub_Stats.stargazers_count
+	background-color = "rgba(255,255,255,0.2)"
+	padding = "0px 6px"
+	border-radius = "5px"
 }
 
 view nav_button_GitHub_Text{
 	type = "span"
-	content = "Github repo"
-	onmouseover = PleaseLeaveAStar
-	onmouseout = PleaseLeaveAStar_Reset
+	content = "Star on GitHub "
 }
 
 view nav_button_GitHub:Algo_Primary_Button {
-	content = [nav_button_GitHub_Icon, nav_button_GitHub_Text]
+	content = [nav_button_GitHub_Icon, nav_button_GitHub_Text, nav_star_showcase]
 	href = "https://github.com/BuckshotPlusPlus/BuckshotPlusPlus"
 }
 
@@ -43,6 +49,11 @@ view nav:Algo_Nav {
 view DiscordFooterLink:Algo_Footer_Link {
 	content = "Discord"
 	href = "https://discord.gg/cakR4W2akj"
+}
+
+view RedditFooterLink:Algo_Footer_Link {
+	content = "Reddit"
+	href = "https://www.reddit.com/r/BuckShotPlusPlus/"
 }
 
 view BppFooterLink:Algo_Footer_Link {
@@ -62,12 +73,18 @@ view AlgoFooterLink:Algo_Footer_Link {
 
 view TutoFooterLink:Algo_Footer_Link {
 	content = "Getting started"
-	href = "https://www.youtube.com/watch?v=0z7p-ipa9UQ"
+	href = "https://www.youtube.com/watch?v=j0k22uoR9Bc"
 }
+
+view TutoFooterLink2:Algo_Footer_Link {
+	content = "How to use reusable components"
+	href = "https://www.youtube.com/watch?v=z8xkDhjg3GQ"
+}
+
 
 view Nav_Community:Algo_Footer_Link_Container{
 	Algo_Footer_Link_Title.content = "Community"
-	content = [Algo_Footer_Link_Title, DiscordFooterLink]
+	content = [Algo_Footer_Link_Title, DiscordFooterLink, RedditFooterLink]
 }
 
 view Nav_Projects:Algo_Footer_Link_Container{
@@ -77,7 +94,7 @@ view Nav_Projects:Algo_Footer_Link_Container{
 
 view Nav_Tutorials:Algo_Footer_Link_Container{
 	Algo_Footer_Link_Title.content = "Tutorials"
-	content = [Algo_Footer_Link_Title, TutoFooterLink]
+	content = [Algo_Footer_Link_Title, TutoFooterLink, TutoFooterLink2]
 }
 
 view Nav_Templates:Algo_Footer_Link_Container{
