@@ -5,7 +5,7 @@ view nav_button_Download:Algo_Nav_Button {
 
 view nav_button_Documentation:Algo_Nav_Button {
 	content = "Documentation"
-	href = "https://bpp.gitbook.io/buckshot++/getting-started/what-is-buckshot++"
+	href = "https://doc.bpplang.com/"
 	target = "_blank"
 }
 
